@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MAX_NUM 1000000
+#define MAX_NUM 100000000
 
 void geraAleatorio(long long unsigned int *num);
 void MaxMin1(int *a, long long unsigned int *Max, int *Min);
