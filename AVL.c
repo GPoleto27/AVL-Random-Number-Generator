@@ -141,15 +141,11 @@ short temRepeticao(noh* tree, long long unsigned int num)
 {
     if (tree != NULL)
     {
-        if (temRepeticao(tree->left, num))
-            return 1;
         if (num == tree->key)
             return 1;
-        if (num > tree->key || num < tree->key)
-            return 0;
-        if (temRepeticao(tree->right, num))
-            return 1;
-        return 0;
+        if (num > tree->key);
+            return temRepeticao(tree->right, num);
+        return temRepeticao(tree->left, num);
     }
     return 0;
 }
